@@ -2,6 +2,8 @@ create database pizzasales;
 
 use pizzasales;
 
+-- Table "pizzas" and "pizza_types" are directly imported by "Table Data import Wizard"
+
 create table orders(
 order_id int not null,
 order_date date not null,
