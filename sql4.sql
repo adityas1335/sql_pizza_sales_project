@@ -28,7 +28,7 @@ join order_details as od on o.order_id=od.order_id
 join pizzas as p on od.pizza_id = p.pizza_id
 group by o.order_date) as Total_Revenue;
 
--- Determine the top 3 most ordered pizza types based on revenue for each pizza category.
+--  Determine the top 3 most ordered pizza types based on revenue for each pizza category.
 select
 category, name, Revenue from
 (select
